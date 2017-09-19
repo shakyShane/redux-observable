@@ -1,7 +1,7 @@
 {
-  "name": "redux-observable",
+  "name": "redux-observable-with-try-catch",
   "version": "0.16.0",
-  "description": "RxJS based middleware for Redux. Compose and cancel async actions and more.",
+  "description": "Temporary patch to try/catch around dispatched actions",
   "module": "lib/es/index.js",
   "main": "lib/cjs/index.js",
   "scripts": {
@@ -31,10 +31,6 @@
     "README.md",
     "LICENSE"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/redux-observable/redux-observable.git"
-  },
   "keywords": [
     "Rx",
     "Ducks",
@@ -47,21 +43,8 @@
     "cancel",
     "action"
   ],
-  "contributors": [
-    {
-      "name": "Ben Lesh",
-      "email": "ben@benlesh.com"
-    },
-    {
-      "name": "Jay Phelps",
-      "email": "hello@jayphelps.com"
-    }
-  ],
+  "contributors": [],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/redux-observable/redux-observable/issues"
-  },
-  "homepage": "https://github.com/redux-observable/redux-observable#README.md",
   "peerDependencies": {
     "redux": "3.*",
     "rxjs": "^5.0.0"

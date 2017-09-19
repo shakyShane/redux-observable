@@ -45,7 +45,14 @@ export function createEpicMiddleware(epic, options = defaultOptions) {
           return output$;
         })
         ::switchMap(output$ => options.adapter.output(output$))
-        .subscribe(store.dispatch);
+        .subscribe((action) => {
+          try {
+            store.dispatch(action);
+          } catch (e) {
+            // re-throwing will do nothing here
+            console.log('Uncaught Error - ', e);
+          }
+        });
 
       // Setup initial root epic
       epic$.next(epic);
